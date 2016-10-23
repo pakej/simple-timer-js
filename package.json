@@ -1,5 +1,5 @@
 {
-  "name": "timer-js",
+  "name": "simple-timer-js",
   "version": "1.0.0",
   "description": "Javascript plugin to implement timers on websites",
   "main": "timer.js",
