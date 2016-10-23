@@ -1,0 +1,26 @@
+{
+  "name": "timer-js",
+  "version": "1.0.0",
+  "description": "Javascript plugin to implement timers on websites",
+  "main": "timer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zaimramlan/timer-js.git"
+  },
+  "keywords": [
+    "javascript",
+    "website",
+    "simple",
+    "dynamic",
+    "timer"
+  ],
+  "author": "Zaim Ramlan <zaem.muz@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zaimramlan/timer-js/issues"
+  },
+  "homepage": "https://github.com/zaimramlan/timer-js#readme"
+}
