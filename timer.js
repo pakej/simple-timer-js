@@ -31,17 +31,13 @@ class Timer {
     }
 
     /**
-     * Force ends the timer.
+     * Force ends the timer and resets its container to their original state.
      */
     endTimer() {
         clearInterval(this.timer_function);
-    }
-
-    /**
-     * Reinitializes the time_left variable to the initial duration.
-     */
-    resetTimer() {
         this.time_left = this.duration;
+        this.changeContainerText(this.timer_container, this.original_text);
+        this.functionsToExecuteAtTimerEnd();
     }
 
     /* Helpers */
@@ -54,11 +50,9 @@ class Timer {
     updateTimerDisplay() {
         this.changeContainerText(this.timer_container, this.formatTimer(--this.time_left));
 
-        var isTimerCompleted = this.time_left == 0
+        var isTimerCompleted = this.time_left == 0;
         if (isTimerCompleted) {
             this.endTimer();
-            this.changeContainerText(this.timer_container, this.original_text);
-            this.functionsToExecuteAtTimerEnd();
         }
     }
 
