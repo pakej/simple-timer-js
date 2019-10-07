@@ -10,15 +10,15 @@ class SimpleTimer {
      * @constructor
      * @author: Zaim Ramlan
      * @param {number} duration The duration (in seconds) that the timer should countdown to.
-     * @param {string} timer_container The class name of the timer's container.
-     * @param {string} original_text The original text to be put back into the timer's container,
+     * @param {string} timerContainer The class name of the timer's container.
+     * @param {string} originalText The original text to be put back into the timer's container,
      * once the timer completes.
      */
-    constructor(duration, timer_container, original_text) {
+    constructor(duration, timerContainer, originalText) {
         this.duration = duration;
-        this.time_left = duration;
-        this.timer_container = timer_container;
-        this.original_text = original_text;
+        this.timeLeft = duration;
+        this.timerContainer = timerContainer;
+        this.originalText = originalText;
         this.EVERY_SECOND = 1000;
         this.functionsToExecuteAtTimerEnd = function() {};
     }
@@ -35,8 +35,8 @@ class SimpleTimer {
      */
     endTimer() {
         clearInterval(this.timer_function);
-        this.time_left = this.duration;
-        this.changeContainerText(this.timer_container, this.original_text);
+        this.timeLeft = this.duration;
+        this.changeContainerText(this.timerContainer, this.originalText);
         this.functionsToExecuteAtTimerEnd();
     }
 
@@ -48,9 +48,9 @@ class SimpleTimer {
      * (This method is intended to only be called inside the Timer class)
      */
     updateTimerDisplay() {
-        this.changeContainerText(this.timer_container, this.formatTimer(--this.time_left));
+        this.changeContainerText(this.timerContainer, this.formatTimer(--this.timeLeft));
 
-        var isTimerCompleted = this.time_left == 0;
+        var isTimerCompleted = this.timeLeft == 0;
         if (isTimerCompleted) {
             this.endTimer();
         }
@@ -72,13 +72,13 @@ class SimpleTimer {
     /**
      * Formats time in MM:SS format, given the time in seconds
      *
-     * @param {number} seconds_input The number of seconds remaining.
+     * @param {number} secondsInput The number of seconds remaining.
      * @return {string} The text formatted to represent timer countdown.
      */
-    formatTimer(seconds_input) {
-        var minutes = Math.floor(seconds_input / 60);
-        var seconds = seconds_input % 60;
-        var formatted_timer = (minutes < 10 ? "0" : "" ) + minutes + ":" + (seconds < 10 ? "0" : "" ) + seconds;
-        return formatted_timer;
+    formatTimer(secondsInput) {
+        var minutes = Math.floor(secondsInput / 60);
+        var seconds = secondsInput % 60;
+        var formattedTimer = (minutes < 10 ? "0" : "" ) + minutes + ":" + (seconds < 10 ? "0" : "" ) + seconds;
+        return formattedTimer;
     }
 }
