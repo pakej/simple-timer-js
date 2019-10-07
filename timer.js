@@ -71,7 +71,8 @@ class Timer {
      * (This method is intended to only be called inside the Timer class)
      */
     changeContainerText(container, text) {
-        $(container).html(text);
+        var container = document.getElementsByClassName(container)[0];
+        container.innerHTML = text;
     }
 
     /**
