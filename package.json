@@ -1,26 +1,21 @@
 {
   "name": "simple-timer-js",
-  "version": "1.0.0",
-  "description": "Javascript plugin to implement timers on websites",
-  "main": "timer.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "version": "2.0.1",
+  "description": "A simple timer to show timer countdown on websites.",
+  "main": "simple_timer.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zaimramlan/timer-js.git"
+    "url": "git+https://github.com/lambdable/simple-timer-js.git"
   },
   "keywords": [
     "javascript",
-    "website",
     "simple",
-    "dynamic",
     "timer"
   ],
   "author": "Zaim Ramlan <zaem.muz@gmail.com>",
-  "license": "MIT",
+  "license": "Apache 2.0",
   "bugs": {
-    "url": "https://github.com/zaimramlan/timer-js/issues"
+    "url": "https://github.com/lambdable/simple-timer-js/issues"
   },
-  "homepage": "https://github.com/zaimramlan/timer-js#readme"
+  "homepage": "https://github.com/lambdable/simple-timer-js#readme"
 }
