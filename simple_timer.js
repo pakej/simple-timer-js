@@ -3,7 +3,7 @@
 * Copyright © 2019 Zaim Ramlan
 */
 
-class Timer {
+class SimpleTimer {
     /**
      * Creates an instance of Timer.
      *
