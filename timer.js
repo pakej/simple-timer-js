@@ -1,11 +1,6 @@
 /*
-* Timer.js by Zaim Ramlan
-*
-* duration 			- total duration of the timer (in seconds)
-* timer_container 	- HTML element to target (i.e. '#html-element-id') as container to display timer
-* original_text 	- the original text in the HTML element. if there aren't, put an empty string (i.e. "") 
-*
-* note: requires jQuery to work
+* SimpleTimer 2.0.0
+* Copyright © 2019 Zaim Ramlan
 */
 
 var Timer = function(duration, timer_container, original_text) {
@@ -15,7 +10,7 @@ var Timer = function(duration, timer_container, original_text) {
 		this.time_left = duration;
 		this.timer_container = timer_container;
 		this.original_text = original_text;
-		
+
 		// class-wide variables
 		this.EVERY_SECOND = 1000;
 		// functions to be executed after timer finishes
@@ -35,11 +30,11 @@ var Timer = function(duration, timer_container, original_text) {
 
 		this.startTimer = function() {
 			this.timer_function = setInterval(this.updateTimerDisplay.bind(this), this.EVERY_SECOND);
-		}	
+		}
 
 		this.endTimer = function() {
 			clearInterval(this.timer_function);
-		}	
+		}
 
 		this.resetTimer = function() {
 			// reinitialize the time_left variable to the initial duration
@@ -55,6 +50,6 @@ var Timer = function(duration, timer_container, original_text) {
 				this.changeContainerText(this.timer_container, this.original_text);
 				this.functionsToExecuteAtTimerEnd();
 			}
-		}		
-	// }	
+		}
+	// }
 }
