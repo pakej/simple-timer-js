@@ -4,12 +4,12 @@
 A simple timer to show timer countdown on websites.
 
 ## Installation
-<img src="https://avatars1.githubusercontent.com/u/22247014?s=200&v=4" width="20" height="20"> Yarn
+### <img src="https://avatars1.githubusercontent.com/u/22247014?s=200&v=4" width="20" height="20"> Yarn
 ```bash
 $ yarn add simple-timer-js
 ```
 
-<img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/npm/npm.png" width="20" height="20"> NPM
+### <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/npm/npm.png" width="20" height="20"> NPM
 ```bash
 $ npm install simple-timer-js
 ```
