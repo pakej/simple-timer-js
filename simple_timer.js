@@ -42,8 +42,6 @@ class SimpleTimer {
 
     /**
      * Updates the timer display to the timer countdown, or the original text.
-     *
-     * (This method is intended to only be called inside the Timer class)
      */
     _updateTimerDisplay() {
         this._changeContainerText(this._timerContainer, this._formatTimer(--this._timeLeft));
@@ -59,8 +57,6 @@ class SimpleTimer {
      *
      * @param {string} container The class name of the container.
      * @param {string} text The text to replace the one inside the container.
-     *
-     * (This method is intended to only be called inside the Timer class)
      */
     _changeContainerText(container, text) {
         var container = document.getElementsByClassName(container)[0];
