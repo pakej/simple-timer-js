@@ -15,6 +15,11 @@ $ npm install simple-timer-js
 ```
 
 ## Usage
+1. Require the `SimpleTimer`
+    ```javascript
+    var SimpleTimer = require("simple-timer-js");
+    ````
+
 1. Create a new SimpleTimer instance with the expected `duration`, `timerContainer`, `originalText`.
     ```javascript
     var timerDurationInSeconds = 60
