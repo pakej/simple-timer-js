@@ -22,20 +22,20 @@ $ npm install simple-timer-js
 
 1. Create a new SimpleTimer instance with the expected `duration`, `timerContainer`, `originalText`.
     ```javascript
-    var timerDurationInSeconds = 60
-    var uniqueTimerContainerClassName = "timer-container"
-    var originalTextInContainer = ""
-    var timer = new SimpleTimer(timerDurationInSeconds, uniqueTimerContainerClassName, originalTextInContainer)
+    var timerDurationInSeconds = 60;
+    var uniqueTimerContainerClassName = "timer-container";
+    var originalTextInContainer = "";
+    var timer = new SimpleTimer(timerDurationInSeconds, uniqueTimerContainerClassName, originalTextInContainer);
     ```
 
 1. Call `startTimer()` to start the timer.
     ```javascript
-    timer.startTimer()
+    timer.startTimer();
     ```
 
 1. If you want to force end the timer, simply call `endTimer()`. Otherwise, the timer will stop on its own, after it reaches the given `timerDuration`.
     ```javascript
-    timer.endTimer()
+    timer.endTimer();
     ```
 
 ## Contributing
