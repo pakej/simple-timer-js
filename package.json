@@ -1,21 +1,21 @@
 {
   "name": "simple-timer-js",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "A simple timer to show timer countdown on websites.",
   "main": "simple_timer.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lambdable/simple-timer-js.git"
+    "url": "git+https://github.com/pakej/simple-timer-js.git"
   },
   "keywords": [
     "javascript",
     "simple",
     "timer"
   ],
-  "author": "Zaim Ramlan <zaem.muz@gmail.com>",
+  "author": "Zaim Ramlan <zaimramlan@gmail.com>",
   "license": "Apache 2.0",
   "bugs": {
-    "url": "https://github.com/lambdable/simple-timer-js/issues"
+    "url": "https://github.com/pakej/simple-timer-js/issues"
   },
-  "homepage": "https://github.com/lambdable/simple-timer-js#readme"
+  "homepage": "https://github.com/pakej/simple-timer-js#readme"
 }
