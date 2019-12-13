@@ -1,5 +1,5 @@
 /*
-* SimpleTimer 2.0.3
+* SimpleTimer 2.0.4
 * Copyright © 2019 Zaim Ramlan
 */
 
